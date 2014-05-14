@@ -12,6 +12,8 @@
 # Author:
 #   markstory
 #   mbmccormick
+#
+# Modified by @fleeting
 env = process.env
 
 forecastIoUrl = 'https://api.forecast.io/forecast/' + process.env.HUBOT_FORECAST_API_KEY + '/'
