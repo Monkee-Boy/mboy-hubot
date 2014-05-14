@@ -25,9 +25,7 @@
     "hubot-hipchat": "^2.6.4",
     "twit": "latest",
     "sys": "latest",
-    "querystring": "latest",
-    "url": "latest",
-    "gitio2": "latest"
+    "child_process": "latest"
   },
   "engines": {
     "node": ">= 0.8.x",
