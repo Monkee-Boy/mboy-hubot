@@ -1,1 +1,1 @@
-web: bin/hubot --adapter hipchat
+app: bin/hubot --adapter hipchat
