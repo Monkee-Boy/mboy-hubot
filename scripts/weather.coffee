@@ -6,7 +6,7 @@
 #   HUBOT_FORECAST_API_KEY - Forecast.io API Key
 #
 # Commands:
-#   hubot weather <city> - Get the weather for a location.
+#   hubot weather - Get the weather for Austin, Texas.
 #   hubot forecast <city> - Get the 3 day forecast for a location.
 #
 # Author:
@@ -87,10 +87,12 @@ getTemp = (c) ->
 
 
 module.exports = (robot) ->
+  robot.respond /weather/i, (msg) ->
+    lookupAddress(msg, 'Austin, Texas', lookupWeather)
 
-  robot.respond /weather(?: me|for|in)?\s(.*)/i, (msg) ->
-    location = msg.match[1]
-    lookupAddress(msg, location, lookupWeather)
+  # robot.respond /weather(?: me|for|in)?\s(.*)/i, (msg) ->
+  #   location = msg.match[1]
+  #   lookupAddress(msg, location, lookupWeather)
 
   robot.respond /forecast(?: me|for|in)?\s(.*)/i, (msg) ->
     location = msg.match[1]
