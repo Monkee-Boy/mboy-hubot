@@ -14,5 +14,17 @@
 #   fleeting
 
 module.exports = (robot) ->
-  robot.hear /(BANANA|MONKEE|MONKEEBOY|MONKEE-BOY|MBOY)/i, (msg) ->
+  robot.hear /(MONKEE|MONKEEBOY|MONKEE-BOY|MBOY)/i, (msg) ->
     msg.send "(mboy)"
+
+  robot.hear /BANANA/i, (msg) ->
+    msg.send "Banana? Nomnomnom!"
+
+  robot.hear /(left the room)/i, (msg) ->
+    msg.send "Leaving? I'll miss that monkee. (okay)"
+
+  robot.enter (msg) ->
+    msg.send "Hey #{msg.message.user.name}, welcome to the jungle."  if msg.message.user.room is "113009_mbot_playground@conf.hipchat.com"
+
+  robot.leave (msg) ->
+    msg.send "Aww, I'm going to miss #{msg.message.user.name}. (okay)"  if msg.message.user.room is "113009_mbot_playground@conf.hipchat.com"
