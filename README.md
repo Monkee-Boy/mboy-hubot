@@ -1,6 +1,8 @@
-# Monkee Bot (A Hubot)
+# Monkee Bot
 
-MBot is a version of GitHub's Campefire bot, hubot. He is currently deployed on heroku and used by Monkee-Boy with HipChat.
+Say hello to ![MBoy](https://dujrsrsgsd3nh.cloudfront.net/img/emoticons/113009/mboy-1400025841.png) **MBot**, your friendly neighborhood monkee robot. A brother to [hubot](https://hubot.github.com/), he currently lives high up in the tree tops of Heroku and stays busy in the [@monkee-boy](http://github.com/monkee-boy/) HipChat server. He enjoys creating memes, sharing his knowledge of cats, monitoring twitter for mentions of MBoy, and serving up beer when needed.
+
+---
 
 ### Testing Hubot Locally
 
