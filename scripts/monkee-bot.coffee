@@ -18,7 +18,7 @@ module.exports = (robot) ->
     msg.send "(mboy)"
 
   robot.hear /BANANA/i, (msg) ->
-    msg.send "Banana? Nomnomnom!"
+    msg.send "(banana) Om Nom Nom Nom!"
 
   robot.hear /(left the room)/i, (msg) ->
     msg.send "Leaving? I'll miss that monkee. (okay)"
