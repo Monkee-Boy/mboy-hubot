@@ -21,19 +21,19 @@ module.exports = (robot) ->
     msg.send "(banana) Om Nom Nom Nom!"
 
   robot.hear /@TEST/i, (msg) ->
-    msg.send "(mboy) Hey @fleeting, #{msg.message.user.name} needs you."
+    msg.send "(mboy) Hey @fleeting, #{msg.message.user.name} has summoned you."
 
   robot.hear /@DEV/i, (msg) ->
-    msg.send "(mboy) Hey @fleeting, @SarahHigley, and @CraigKahle, you are hereby summoned."
+    msg.send "(mboy) Hey @fleeting, @SarahHigley, and @CraigKahle, #{msg.message.user.name} has summoned you."
 
   robot.hear /@DESIGN/i, (msg) ->
-    msg.send "(mboy) Hey @NikkiClark, @steph, and @AutumnHutchins, you are hereby summoned."
+    msg.send "(mboy) Hey @NikkiClark, @steph, and @AutumnHutchins, #{msg.message.user.name} has summoned you."
 
   robot.hear /@MARKETING/i, (msg) ->
-    msg.send "(mboy) Hey @JoePickerill and @AdamLefton, you are hereby summoned."
+    msg.send "(mboy) Hey @JoePickerill and @AdamLefton, #{msg.message.user.name} has summoned you."
 
   robot.hear /@MGMT/i, (msg) ->
-    msg.send "(mboy) Hey @BossMan and @JoePickerill, you are hereby summoned."
+    msg.send "(mboy) Hey @BossMan and @JoePickerill, #{msg.message.user.name} has summoned you."
 
   robot.hear /ANDREA/i, (msg) ->
     msg.send "(mboy) Aww, I miss Andrea. (grumpycat)"
