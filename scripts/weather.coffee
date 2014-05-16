@@ -7,13 +7,12 @@
 #
 # Commands:
 #   hubot weather - Get the weather for Austin, Texas.
-#   hubot forecast <city> - Get the 3 day forecast for a location.
 #
 # Author:
 #   markstory
 #   mbmccormick
 #
-# Modified by @fleeting
+# Modified by @fleeting for MBot
 env = process.env
 
 forecastIoUrl = 'https://api.forecast.io/forecast/' + process.env.HUBOT_FORECAST_API_KEY + '/'
@@ -45,41 +44,7 @@ lookupWeather = (msg, coords, err) ->
       return msg.send "Could not parse weather data."
     humidity = (current.humidity * 100).toFixed 0
     temperature = getTemp(current.temperature)
-    text = "It is currently #{temperature} #{current.summary}, #{humidity}% humidity in Austin, Texas."
-    msg.send text
-
-lookupForecast = (msg, coords, err) ->
-  return msg.send err if err
-  return msg.send "You need to set env.HUBOT_FORECAST_API_KEY to get weather data" if not env.HUBOT_FORECAST_API_KEY
-
-  url = forecastIoUrl + coords.lat + ',' + coords.lng
-  msg.http(url).query(units: 'ca').get() (err, res, body) ->
-    return msg.send 'Could not get weather forecast' if err
-    try
-      body = JSON.parse body
-      forecast = body.daily.data
-      today = forecast[0]
-      tomorrow = forecast[1]
-      dayAfter = forecast[2]
-    catch err
-      return msg.send 'Unable to parse forecast data.'
-    text = "The weather for:\n"
-
-    appendText = (text, data) ->
-      dateToday = new Date(data.time * 1000)
-      month = dateToday.getMonth() + 1
-      day = dateToday.getDate()
-      humidity = (data.humidity * 100).toFixed 0
-      maxTemp = getTemp data.temperatureMax
-      minTemp = getTemp data.temperatureMin
-
-      text += "#{month}/#{day} - High of #{maxTemp}, low of: #{minTemp} "
-      text += "#{data.summary} #{humidity}% humidity\n"
-      text
-
-    text = appendText text, today
-    text = appendText text, tomorrow
-    text = appendText text, dayAfter
+    text = "(mboy) It is currently #{temperature} #{current.summary}, #{humidity}% humidity in Austin, Texas."
     msg.send text
 
 getTemp = (c) ->
@@ -91,11 +56,3 @@ getTemp = (c) ->
 module.exports = (robot) ->
   robot.respond /weather/i, (msg) ->
     lookupAddress(msg, 'Austin, Texas', lookupWeather)
-
-  # robot.respond /weather(?: me|for|in)?\s(.*)/i, (msg) ->
-  #   location = msg.match[1]
-  #   lookupAddress(msg, location, lookupWeather)
-
-  robot.respond /forecast(?: me|for|in)?\s(.*)/i, (msg) ->
-    location = msg.match[1]
-    lookupAddress(msg, location, lookupForecast)
