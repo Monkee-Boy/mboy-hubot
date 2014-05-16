@@ -24,7 +24,7 @@ module.exports = (robot) ->
     msg.send "(mboy) Hey @fleeting, #{msg.message.user.name} has summoned you."
 
   robot.hear /@DEV/i, (msg) ->
-    msg.send "(mboy) Hey @fleeting, @SarahHigley, and @CraigKahle, #{msg.message.user.name} has summoned you."
+    msg.send "(mboy) Hey @fleeting, @higley, and @CraigKahle, #{msg.message.user.name} has summoned you."
 
   robot.hear /@DESIGN/i, (msg) ->
     msg.send "(mboy) Hey @NikkiClark, @steph, and @AutumnHutchins, #{msg.message.user.name} has summoned you."
