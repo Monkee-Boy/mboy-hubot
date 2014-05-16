@@ -20,6 +20,10 @@ module.exports = (robot) ->
   robot.hear /BANANA/i, (msg) ->
     msg.send "(banana) Om Nom Nom Nom!"
 
+  robot.hear /@DEV/i, (msg) ->
+    #msg.send "(mboy) Hey @fleeting, @SarahHigley, and @CraigKahle, you are needed."
+    msg.send "(mboy) Hey @fleeting you are hereby summoned."
+
   # robot.enter (msg) ->
   #   msg.send "Hey #{msg.message.user.name}, welcome to the jungle."  if msg.message.user.room is "113009_mbot_playground@conf.hipchat.com"
   #
