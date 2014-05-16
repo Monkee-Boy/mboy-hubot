@@ -20,6 +20,9 @@ module.exports = (robot) ->
   robot.hear /BANANA/i, (msg) ->
     msg.send "(banana) Om Nom Nom Nom!"
 
+  robot.hear /@TEST/i, (msg) ->
+    msg.send "(mboy) Hey @fleeting, #{msg.message.user.name} needs you."
+
   robot.hear /@DEV/i, (msg) ->
     msg.send "(mboy) Hey @fleeting, @SarahHigley, and @CraigKahle, you are hereby summoned."
 
