@@ -33,7 +33,7 @@ module.exports = (robot) ->
     msg.send "(mboy) Hey @JoePickerill and @AdamLefton, #{msg.message.user.name} has summoned you."
 
   robot.hear /@MGMT/i, (msg) ->
-    msg.send "(mboy) Hey @BossMan and @JoePickerill, #{msg.message.user.name} has summoned you."
+    msg.send "(mboy) Hey @BossMan, @JoePickerill, and @AndreaTucker, #{msg.message.user.name} has summoned you."
 
   # robot.hear /ANDREA/i, (msg) ->
   #   msg.send "(mboy) Aww, I miss Andrea. (grumpycat)"
