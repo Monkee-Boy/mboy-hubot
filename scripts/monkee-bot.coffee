@@ -35,8 +35,8 @@ module.exports = (robot) ->
   robot.hear /@MGMT/i, (msg) ->
     msg.send "(mboy) Hey @BossMan and @JoePickerill, #{msg.message.user.name} has summoned you."
 
-  robot.hear /ANDREA/i, (msg) ->
-    msg.send "(mboy) Aww, I miss Andrea. (grumpycat)"
+  # robot.hear /ANDREA/i, (msg) ->
+  #   msg.send "(mboy) Aww, I miss Andrea. (grumpycat)"
 
   # TODO: Need to solve a few issues with these calling more than they should.
   # robot.enter (msg) ->
