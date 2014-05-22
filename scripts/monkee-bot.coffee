@@ -36,7 +36,7 @@ module.exports = (robot) ->
     msg.send "(mboy) Hey @BossMan, @JoePickerill, and @AndreaTucker, #{msg.message.user.name} has summoned you."
 
   robot.hear /.*(coffee me).*/i, (msg) ->
-    msg.send "(mboy) Coffee? You live in Austin, have this instead. http://365thingsaustin.com/wp-content/uploads/beer-flight1.jpg"
+    msg.send "Coffee? You live in Austin, have this instead. http://365thingsaustin.com/wp-content/uploads/beer-flight1.jpg"
 
   # robot.hear /ANDREA/i, (msg) ->
   #   msg.send "(mboy) Aww, I miss Andrea. (grumpycat)"
