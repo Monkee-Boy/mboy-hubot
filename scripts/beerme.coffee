@@ -30,7 +30,6 @@ beers = [
   "http://www.gqindia.com/sites/default/files/imagecache/article-inner-image-341-354/article/slideshow/1289/beer2.jpg",
   "http://www.gqindia.com/sites/default/files/imagecache/article-inner-image-341-354/article/slideshow/1289/Beer3.jpg",
   "http://365thingsaustin.com/wp-content/uploads/beer-flight1.jpg",
-  "http://i102.photobucket.com/albums/m109/beanbone/Austin_Amber_200.jpg",
   "http://media.culturemap.com/crop/c8/a3/600x450/beer_tasting.jpg"
 ]
 
