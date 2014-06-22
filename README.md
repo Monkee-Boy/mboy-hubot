@@ -1,6 +1,6 @@
 # Monkee Bot
 
-Say hello to ![MBoy](https://dujrsrsgsd3nh.cloudfront.net/img/emoticons/113009/mboy-1400025841.png) **MBot**, your friendly neighborhood monkee robot. A brother to [hubot](https://hubot.github.com/), he currently lives high up in the tree tops of Heroku and stays busy in the [@monkee-boy](http://github.com/monkee-boy/) HipChat server. He enjoys creating memes, sharing his knowledge of cats, monitoring twitter for mentions of MBoy, and serving up beer when needed.
+Say hello to ![MBoy](https://dujrsrsgsd3nh.cloudfront.net/img/emoticons/113009/mboy-1403300528.jpg) **MBot**, your friendly neighborhood monkee robot. A brother to [hubot](https://hubot.github.com/), he currently lives high up in the tree tops of Heroku and stays busy in the [@monkee-boy](http://github.com/monkee-boy/) HipChat server. He enjoys creating memes, sharing his knowledge of cats, monitoring twitter for mentions of MBoy, and serving up beer when needed.
 
 ---
 
