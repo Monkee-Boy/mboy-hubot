@@ -30,71 +30,7 @@ Then you can interact with hubot by typing `hubot help`.
 
 ### Scripting
 
-Take a look at the scripts in the `./scripts` folder for examples.
-Delete any scripts you think are useless or boring.  Add whatever functionality you
-want hubot to have. Read up on what you can do with hubot in the [Scripting Guide](https://github.com/github/hubot/blob/master/docs/scripting.md).
-
-### Redis Persistence
-
-If you are going to use the `redis-brain.coffee` script from `hubot-scripts`
-(strongly suggested), you will need to add the Redis to Go addon on Heroku which requires a verified
-account or you can create an account at [Redis to Go][redistogo] and manually
-set the `REDISTOGO_URL` variable.
-
-    % heroku config:add REDISTOGO_URL="..."
-
-If you don't require any persistence feel free to remove the
-`redis-brain.coffee` from `hubot-scripts.json` and you don't need to worry
-about redis at all.
-
-[redistogo]: https://redistogo.com/
-
-## Adapters
-
-Adapters are the interface to the service you want your hubot to run on. This
-can be something like Campfire or IRC. There are a number of third party
-adapters that the community have contributed. Check
-[Hubot Adapters][hubot-adapters] for the available ones.
-
-If you would like to run a non-Campfire or shell adapter you will need to add
-the adapter package as a dependency to the `package.json` file in the
-`dependencies` section.
-
-Once you've added the dependency and run `npm install` to install it you can
-then run hubot with the adapter.
-
-    % bin/hubot -a <adapter>
-
-Where `<adapter>` is the name of your adapter without the `hubot-` prefix.
-
-[hubot-adapters]: https://github.com/github/hubot/blob/master/docs/adapters.md
-
-## hubot-scripts
-
-There will inevitably be functionality that everyone will want. Instead
-of adding it to hubot itself, you can submit pull requests to
-[hubot-scripts][hubot-scripts].
-
-To enable scripts from the hubot-scripts package, add the script name with
-extension as a double quoted string to the `hubot-scripts.json` file in this
-repo.
-
-[hubot-scripts]: https://github.com/github/hubot-scripts
-
-## external-scripts
-
-Tired of waiting for your script to be merged into `hubot-scripts`? Want to
-maintain the repository and package yourself? Then this added functionality
-maybe for you!
-
-Hubot is now able to load scripts from third-party `npm` packages! To enable
-this functionality you can follow the following steps.
-
-1. Add the packages as dependencies into your `package.json`
-2. `npm install` to make sure those packages are installed
-
-To enable third-party scripts that you've added you will need to add the package
-name as a double quoted string to the `external-scripts.json` file in this repo.
+Take a look at the scripts in the `./scripts` folder for examples. Read up on what you can do with hubot in the [Scripting Guide](https://github.com/github/hubot/blob/master/docs/scripting.md).
 
 ## Deployment
 
