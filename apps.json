@@ -3,7 +3,7 @@
     "provider": "heroku",
     "auto_merge": false,
     "repository": "Monkee-Boy/mboy-hubot",
-    "environments": ["production"],
+    "environments": ["app"],
 
     "heroku_production_name": "mboy-hubot"
   }
