@@ -14,14 +14,11 @@
 #   fleeting
 
 module.exports = (robot) ->
-  robot.hear /(MONKEE|MONKEEBOY|MONKEE-BOY|MBOY)/i, (msg) ->
+  robot.hear /(MONKEE|MBOY)/i, (msg) ->
     msg.send "(mboy)"
 
   robot.hear /BANANA/i, (msg) ->
     msg.send "(banana) Om Nom Nom Nom!"
-
-  robot.hear /@TEST/i, (msg) ->
-    msg.send "(mboy) Hey @fleeting, #{msg.message.user.name} has summoned you."
 
   robot.hear /@DEV/i, (msg) ->
     msg.send "(mboy) Hey @fleeting, @PeteGautier, @higley, @john, and @JessicaCanales, #{msg.message.user.name} has summoned you."
