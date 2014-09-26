@@ -20,7 +20,7 @@ module.exports = (robot) ->
   robot.hear /BANANA/i, (msg) ->
     msg.send "(banana) Om Nom Nom Nom!"
 
-  robot.hear /BABY/i, (msg) ->
+  robot.hear /(BABY|CUNNING|FIREFLY)/i, (msg) ->
     msg.send "(cunningbaby)"
 
   robot.hear /@DEV/i, (msg) ->
