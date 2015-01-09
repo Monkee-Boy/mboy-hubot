@@ -26,23 +26,34 @@ module.exports = (robot) ->
   robot.hear /@AdamLefton/i, (msg) ->
     msg.send "(iamawarhero) The war hero we deserve."
 
+  robot.hear /.*(coffee me).*/i, (msg) ->
+    msg.send "(mboy) Coffee? You live in Austin! https://scontent-b.xx.fbcdn.net/hphotos-prn2/t1.0-9/10325194_10152473938621742_3748103880787422234_n.jpg"
+
+  #####
+  # mBoy Alias'
   robot.hear /@DEV/i, (msg) ->
     msg.send "(mboy) Hey @fleeting, @PeteGautier, @higley, @john, and @JessicaCanales, #{msg.message.user.name} has summoned you."
 
   robot.hear /@DESIGN/i, (msg) ->
-    msg.send "(mboy) Hey @nikki, @steph, and @AutumnHutchins, #{msg.message.user.name} has summoned you."
+    msg.send "(mboy) Hey @nikki, @steph, and @autumn, #{msg.message.user.name} has summoned you."
 
   robot.hear /@MARKETING/i, (msg) ->
     msg.send "(mboy) Hey @JoePickerill, @AdamLefton, and @AlexisKraus, #{msg.message.user.name} has summoned you."
 
   robot.hear /@MGMT/i, (msg) ->
     msg.send "(mboy) Hey @MrNiceGuy, @JoePickerill, and @AndreaTucker, #{msg.message.user.name} has summoned you."
+  #####
 
-  robot.hear /.*(coffee me).*/i, (msg) ->
-    msg.send "(mboy) Coffee? You live in Austin! https://scontent-b.xx.fbcdn.net/hphotos-prn2/t1.0-9/10325194_10152473938621742_3748103880787422234_n.jpg"
+  #####
+  # The Great Dish Etiquette of 2015
+  kitchen_memes = [
+    "http://makeameme.org/media/created/YEAH-if-you-aujh53.jpg",
+    "http://m.memegen.com/83zm2s.jpg"
+  ]
 
-  robot.hear /.*(yo).*/i, (msg) ->
-    robot.messageRoom("113009_mbot_playground@conf.hipchat.com", "mBot in the house.");
+  robot.hear /.*(dirty kitchen).*/i, (msg) ->
+    robot.messageRoom("113009_mbot_playground@conf.hipchat.com", "Come on Monkees, we don't actually live in the jungle. I've found that somebody has violated the great Dish Etiquette of 2015. You know who you are so there is no need to call you out. Just take care of it. "+dirtykitchen[Math.floor(Math.random()*dirtykitchen.length)]);
+  #####
 
   # robot.hear /ANDREA/i, (msg) ->
   #   msg.send "(mboy) Aww, I miss Andrea. (grumpycat)"
