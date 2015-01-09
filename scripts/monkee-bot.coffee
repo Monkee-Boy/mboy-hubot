@@ -48,11 +48,12 @@ module.exports = (robot) ->
   # The Great Dish Etiquette of 2015
   kitchen_memes = [
     "http://makeameme.org/media/created/YEAH-if-you-aujh53.jpg",
-    "http://m.memegen.com/83zm2s.jpg"
+    "http://m.memegen.com/83zm2s.jpg",
+    "http://www.quickmeme.com/img/c8/c8e2da6a84bd0f862c9135b59ac7b758bae8b587d3bf042820de2334dd2f822d.jpg"
   ]
 
-  robot.hear /.*(dirty kitchen).*/i, (msg) ->
-    robot.messageRoom("113009_the_great_dish_etiquette_of_2015@conf.hipchat.com", "Come on Monkees, we don't actually live in the jungle. I've found that somebody has violated the great Dish Etiquette of 2015. You know who you are so there is no need to call you out. Just take care of it. "+kitchen_memes[Math.floor(Math.random()*kitchen_memes.length)]);
+  robot.hear /.*(dirtykitchen).*/i, (msg) ->
+    robot.messageRoom("113009_monkee-boy@conf.hipchat.com", "Come on Monkees, we don't actually live in the jungle. I've found that somebody has violated The Great Dish Etiquette of 2015. You know who you are so there is no need to call you out. Just take care of it. "+kitchen_memes[Math.floor(Math.random()*kitchen_memes.length)]);
   #####
 
   # robot.hear /ANDREA/i, (msg) ->
