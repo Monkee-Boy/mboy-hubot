@@ -52,7 +52,7 @@ module.exports = (robot) ->
   ]
 
   robot.hear /.*(dirty kitchen).*/i, (msg) ->
-    robot.messageRoom("113009_mbot_playground@conf.hipchat.com", "Come on Monkees, we don't actually live in the jungle. I've found that somebody has violated the great Dish Etiquette of 2015. You know who you are so there is no need to call you out. Just take care of it. "+kitchen_memes[Math.floor(Math.random()*kitchen_memes.length)]);
+    robot.messageRoom("113009_the_great_dish_etiquette_of_2015@conf.hipchat.com", "Come on Monkees, we don't actually live in the jungle. I've found that somebody has violated the great Dish Etiquette of 2015. You know who you are so there is no need to call you out. Just take care of it. "+kitchen_memes[Math.floor(Math.random()*kitchen_memes.length)]);
   #####
 
   # robot.hear /ANDREA/i, (msg) ->
