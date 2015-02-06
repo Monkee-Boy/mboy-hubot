@@ -14,8 +14,8 @@
 #   fleeting
 
 module.exports = (robot) ->
-  robot.hear /(MONKEE|MBOY)/i, (msg) ->
-    msg.send "(mboy)"
+  # robot.hear /(MONKEE|MBOY)/i, (msg) ->
+  #   msg.send "(mboy)"
 
   robot.hear /BANANA/i, (msg) ->
     msg.send "(banana) Om Nom Nom Nom!"
