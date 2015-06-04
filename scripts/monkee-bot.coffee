@@ -19,6 +19,9 @@ module.exports = (robot) ->
 
   robot.hear /BANANA/i, (msg) ->
     msg.send "(banana) Om Nom Nom Nom!"
+    
+  robot.hear /@john/i, (msg) ->
+    msg.send "(themantheycalljohn) Man that dude has to be made up of 78% (johnismadeupof)!"
 
   robot.hear /(BABY|CUNNING|FIREFLY|SHINY)/i, (msg) ->
     msg.send "(bicepleft) (cunningbaby) (bicepright)"
