@@ -20,8 +20,8 @@ module.exports = (robot) ->
   robot.hear /BANANA/i, (msg) ->
     msg.send "(banana) Om Nom Nom Nom!"
     
-  robot.hear /@sassyjohn/i, (msg) ->
-    msg.send "(themantheycalljohn) Man that dude has to be made up of 78% (johnismadeupof)!"
+  #robot.hear /@john/i, (msg) ->
+  #  msg.send "(themantheycalljohn) Man that dude has to be made up of 78% (johnismadeupof)!"
 
   robot.hear /(BABY|CUNNING|FIREFLY|SHINY)/i, (msg) ->
     msg.send "(bicepleft) (cunningbaby) (bicepright)"
@@ -38,7 +38,7 @@ module.exports = (robot) ->
   #####
   # mBoy Alias'
   robot.hear /@DEV/i, (msg) ->
-    msg.send "(mboy) Hey @fleeting, @PeteGautier, @higley, @sassyjohn, @JessicaCanales, and @stoney, #{msg.message.user.name} has summoned you."
+    msg.send "(mboy) Hey @fleeting, @PeteGautier, @john, @JessicaCanales, and @stoney, #{msg.message.user.name} has summoned you."
 
   robot.hear /@DESIGN/i, (msg) ->
     msg.send "(mboy) Hey @nikki, @steph, and @autumn, #{msg.message.user.name} has summoned you."
