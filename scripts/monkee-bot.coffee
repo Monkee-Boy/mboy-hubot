@@ -38,7 +38,7 @@ module.exports = (robot) ->
   #####
   # mBoy Alias'
   robot.hear /@DEV/i, (msg) ->
-    msg.send "(mboy) Hey @fleeting, @PeteGautier, @john, @JessicaCanales, and @stoney, #{msg.message.user.name} has summoned you."
+    msg.send "(mboy) Hey @fleeting, @PeteGautier, @john, @david, @JessicaCanales, and @stoney, #{msg.message.user.name} has summoned you."
 
   robot.hear /@DESIGN/i, (msg) ->
     msg.send "(mboy) Hey @nikki, @steph, and @autumn, #{msg.message.user.name} has summoned you."
