@@ -29,9 +29,6 @@ module.exports = (robot) ->
   robot.hear /@AdamLefton/i, (msg) ->
     msg.send "(iamawarhero) The war hero we deserve."
 
-  robot.hear /MAGIC/i, (msg) ->
-    msg.send "(dubiousjames) Magic does not exist."
-
   robot.hear /.*(coffee me).*/i, (msg) ->
     msg.send "(mboy) Coffee? You live in Austin! https://scontent-b.xx.fbcdn.net/hphotos-prn2/t1.0-9/10325194_10152473938621742_3748103880787422234_n.jpg"
 
@@ -41,7 +38,7 @@ module.exports = (robot) ->
     msg.send "(mboy) Hey @fleeting, @PeteGautier, @john, @david, @JessicaCanales, and @stoney, #{msg.message.user.name} has summoned you."
 
   robot.hear /@DESIGN/i, (msg) ->
-    msg.send "(mboy) Hey @steph, @autumn, and @JohnHolland , #{msg.message.user.name} has summoned you."
+    msg.send "(mboy) Hey (sadpanda), #{msg.message.user.name} has summoned you."
 
   robot.hear /@MARKETING/i, (msg) ->
     msg.send "(mboy) Hey @JoePickerill, @AdamLefton, and @AlexisKraus, #{msg.message.user.name} has summoned you."
