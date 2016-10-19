@@ -26,7 +26,7 @@ module.exports = (robot) ->
   ]
 
   robot.hear /.*(dirtykitchen).*/i, (msg) ->
-    robot.send room: 'mbot-playground', "Come on Monkees, we don't actually live in the jungle. I've found that somebody has violated The Great Dish Etiquette of 2015. You know who you are so there is no need to call you out. Just take care of it. "+kitchen_memes[Math.floor(Math.random()*kitchen_memes.length)]
+    robot.send room: 'general', "Come on Monkees, we don't actually live in the jungle. I've found that somebody has violated The Great Dish Etiquette of 2015. You know who you are so there is no need to call you out. Just take care of it. "+kitchen_memes[Math.floor(Math.random()*kitchen_memes.length)]
   #####
   
   # TODO: Need to solve a few issues with these calling more than they should.
